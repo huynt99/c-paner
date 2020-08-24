@@ -53,7 +53,7 @@ include('sidebar-a.php');
                     <td><?php echo $row['cate_name'] ?></td>
                     <td><?php echo $row['position'] ?></td>
                     <td><?php echo $row['name'] ?></td>
-                    <td><a class="edit" href="edit-categories-copy.php?cid=<?php echo $row['position'];?>">Edit</a></td>
+                    <td><a class="edit" href="edit-categories.php?cid=<?php echo $row['position'];?>">Edit</a></td>
                     <td><a class="delete" href="delete-categories.php?cid=<?php echo $row['position'];?>">Delete</a></td>
                 </tr>
             <?php endwhile; ?>

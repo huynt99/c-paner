@@ -16,16 +16,16 @@ if (isset($_GET['cid']) && filter_var($_GET['cid'], FILTER_VALIDATE_INT, array('
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = array();
 
-    if (empty($POST['category'])) {
+    if (empty($_POST['category'])) {
         $error[] = 'category';
     } else {
-        $cate_name = mysqli_real_escape_string($con, strip_tags($POST['category']));
+        $cate_name = mysqli_real_escape_string($con, strip_tags($_POST['category']));
     }
 
-    if (empty($POST['position'])) {
+    if (empty($_POST['position'])) {
         $error[] = 'position';
     } else {
-        $position = $POST['position'];
+        $position = $_POST['position'];
     }
 
     if (empty($error)) {
@@ -61,7 +61,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         // $cid ko hợp lệ sẽ thông báo 
         $messagesdie = "<p class='warning'>The categories does not exists</p>";
-        $cn = "";
     }
     ?>
     <h2>Edit Categories: <span>id = <?php echo $cid; ?></span></h2>
@@ -82,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     }
                     ?>
                     <lable for="category">Categories name: </lable>
-                    <input type="text" name="category" value="<?php //echo $cn; ?>">     
+                    <input type="text" name="category" value="<?php echo (isset($cn)) ? $cn : ''; ?>">
                 </div>
                 <div style="padding: 10px;">
                     <?php
@@ -92,8 +91,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ?>
                     <lable for="position">Position: </lable>
                     <select name="position" id="">
-                        <option value="1">1</option>
-                        <option value="1">2</option>
+                        <?php
+                        $que = "SELECT COUNT(cat_id) FROM categories";
+                        $res = mysqli_query($con, $que);
+                        confirm_query($res, $que);
+                        if (mysqli_num_rows($res) == 1) {
+                            list($num) = mysqli_fetch_array($res, MYSQLI_NUM);
+                            for ($i = 1; $i <= $num; $i++) {
+                                echo "<option value='{$i}'>" . $i . "</option>";
+                            }
+                        }
+                        ?>
                     </select>
                 </div>
                 <div style="padding: 10px;"><input type="submit" name="submit" value="submit"></div>
