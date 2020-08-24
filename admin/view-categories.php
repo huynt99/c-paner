@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once('../db/connect.php');
 include('header-admin.php');
 include('sidebar-a.php');
@@ -54,7 +53,7 @@ include('sidebar-a.php');
                     <td><?php echo $row['position'] ?></td>
                     <td><?php echo $row['name'] ?></td>
                     <td><a class="edit" href="edit-categories.php?cid=<?php echo $row['position'];?>">Edit</a></td>
-                    <td><a class="delete" href="delete-categories.php?cid=<?php echo $row['position'];?>">Delete</a></td>
+                    <td><a class="delete" href="delete-categories.php?cid=<?php echo $row['position'];?>&catename=<?php echo $row['cate_name'];?>">Delete</a></td>
                 </tr>
             <?php endwhile; ?>
         </tbody>

@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once('../db/connect.php');
 include('header-admin.php');
 include('sidebar-a.php');
