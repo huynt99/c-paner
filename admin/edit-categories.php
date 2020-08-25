@@ -4,7 +4,7 @@ include('header-admin.php');
 include('sidebar-a.php');
 ?>
 <?php
-// xác nhận biến $_GET trên đường base có hợp lệ với position mình chọn không
+// xác nhận biến $_GET trên đường base có hợp lệ không
 if (isset($_GET['cid']) && filter_var($_GET['cid'], FILTER_VALIDATE_INT, array('min_range' => 1))) {
     $cid = $_GET['cid'];
 } else {
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $res = mysqli_query($con, $que);
         confirm_query($res, $que);
 
-        if ($mysqli_affected_rows($con) == 1) {
+        if (mysqli_affected_rows($con) == 1) {
             $messages =  "<p class='success'>The categories was edited successfully</p>";
         } else {
             $messages = "<p class='warning'>Could not edit to the categories</p>";

@@ -15,7 +15,7 @@ include('sidebar-a.php');
                             break;
                         
                         case 'by':
-                            $order_by = "user_name";
+                            $order_by = "first_name";
                             break;
                     
                         case 'on':
@@ -56,8 +56,8 @@ include('sidebar-a.php');
                     <td><?php echo $row['name'] ?></td>
                     <td><?php echo $row['date'] ?></td>
                     <td><?php echo $row['content'] ?></td>
-                    <td><a class="edit" href="edit-pages.php?cid=<?php echo $row['page_id'];?>">Edit</a></td>
-                    <td><a class="delete" href="delete-pages.php?cid=<?php echo $row['page_id'];?>&pagename=<?php echo $row['page_name'];?>">Delete</a></td>
+                    <td><a class="edit" href="edit-pages.php?pid=<?php echo $row['page_id'];?>">Edit</a></td>
+                    <td><a class="delete" href="delete-pages.php?pid=<?php echo $row['page_id'];?>&pagename=<?php echo $row['page_name'];?>">Delete</a></td>
                 </tr>
             <?php endwhile; ?>
         </tbody>
