@@ -6,8 +6,7 @@ include('views/sidebar-a.php');
 ?>
 <div id="content">
     <?php
-    if (isset($_GET['cid']) && filter_var($_GET['cid'], FILTER_VALIDATE_INT, array('min_range' => 1))) {
-        $cid = $_GET['cid'];
+    if ($cid = validate_id($_GET['cid'])) {
         $que = "SELECT p.page_name, p.page_id, LEFT(p.content, 400) as content, ";
         $que .= " DATE_FORMAT(p.post_on, '%b %d %y') AS date, ";
         $que .= " CONCAT_WS(' ' , u.first_name, u.last_name) AS name, u.user_id ";
