@@ -32,7 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 WHERE cat_id = {$cid} LIMIT 1";
         $res = mysqli_query($con, $que);
         confirm_query($res, $que);
-        confirm_query($que, $res);
 
         if ($mysqli_affected_rows($con) == 1) {
             $messages =  "<p class='success'>The categories was edited successfully</p>";

@@ -32,9 +32,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     }
 
     if (empty($error)) {
-        $sql = "INSERT INTO `pages`(`user_id`, `cat_id`, `page_name`, `content`, `position`)
+        $que = "INSERT INTO `pages`(`user_id`, `cat_id`, `page_name`, `content`, `position`)
                 VALUES (1, {$cate_name}, '{$page_name}','{$content}' , {$position});";
-        $que = mysqli_query($con, $sql);
+        $res = mysqli_query($con, $que);
         $nr = mysqli_affected_rows($con);
         if ($nr == 1) {
             $messages =  "<p class='success'>The categories was added successfully</p>";
@@ -73,10 +73,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <lable for="category">Categories: </lable>
                 <select name="category" id="">
                     <?php
-                    $sql = "SELECT COUNT(cat_id) FROM categories";
-                    $que = mysqli_query($con, $sql);
-                    if (mysqli_num_rows($que) == 1) {
-                        list($num) = mysqli_fetch_array($que, MYSQLI_NUM);
+                    $que = "SELECT COUNT(cat_id) FROM categories";
+                    $res = mysqli_query($con, $que);
+                    if (mysqli_num_rows($res) == 1) {
+                        list($num) = mysqli_fetch_array($res, MYSQLI_NUM);
                         for ($i = 1; $i <= $num; $i++) {
                             echo "<option value ='{$i}' ";
                             if (isset($_GET['position']) && $_GET['position'] == $i)
@@ -96,10 +96,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <lable for="position">Position: </lable>
                 <select name="position" id="">
                     <?php
-                    $sql = "SELECT COUNT(position) FROM categories";
-                    $que = mysqli_query($con, $sql);
-                    if (mysqli_num_rows($que) == 1) {
-                        list($num) = mysqli_fetch_array($que, MYSQLI_NUM);
+                    $que = "SELECT COUNT(position) FROM categories";
+                    $res = mysqli_query($con, $que);
+                    if (mysqli_num_rows($res) == 1) {
+                        list($num) = mysqli_fetch_array($res, MYSQLI_NUM);
                         for ($i = 1; $i <= $num; $i++) {
                             echo "<option value ='{$i}' ";
                             if (isset($_GET['position']) && $_GET['position'] == $i)

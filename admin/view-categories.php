@@ -40,13 +40,13 @@ include('sidebar-a.php');
         </thread>
         <tbody>
             <?php
-            $sql = "SELECT c.cat_id, c.cate_name, c.position, c.user_id, CONCAT_WS(' ', u.first_name, u.last_name) AS name";
-            $sql .= " FROM categories AS c";
-            $sql .= " JOIN users AS u";
-            $sql .= " USING(user_id)";
-            $sql .= " ORDER BY {$order_by}";
-            $que = mysqli_query($con, $sql);
-            while ($row = mysqli_fetch_array($que)) :
+            $que = "SELECT c.cat_id, c.cate_name, c.position, c.user_id, CONCAT_WS(' ', u.first_name, u.last_name) AS name";
+            $que .= " FROM categories AS c";
+            $que .= " JOIN users AS u";
+            $que .= " USING(user_id)";
+            $que .= " ORDER BY {$order_by}";
+            $res = mysqli_query($con, $que);
+            while ($row = mysqli_fetch_array($res)) :
             ?>
                 <tr>
                     <td><?php echo $row['cate_name'] ?></td>

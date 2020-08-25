@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     }
 
     if (empty($error)) {
-        $sql = "INSERT INTO `categories`(`user_id`, `cate_name`, `position`)
+        $que = "INSERT INTO `categories`(`user_id`, `cate_name`, `position`)
                 VALUES (1, '" . $cate_name . "', '" . $position . "');";
-        $que = mysqli_query($con, $sql);
+        $res = mysqli_query($con, $que);
         $nr = mysqli_affected_rows($con);
         if ($nr == 1) {
             $messages =  "<p class='success'>The categories was added successfully</p>";
@@ -51,10 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 <lable for="position">Position: </lable>
                 <select name="position" id="">
                 <?php
-                    $sql = "SELECT COUNT(cat_id) AS count FROM categories";
-                    $que = mysqli_query($con, $sql);
-                    if(mysqli_num_rows($que) == 1){
-                        list($num) = mysqli_fetch_array($que, MYSQLI_NUM);
+                    $que = "SELECT COUNT(cat_id) AS count FROM categories";
+                    $res = mysqli_query($con, $que);
+                    if(mysqli_num_rows($res) == 1){
+                        list($num) = mysqli_fetch_array($res, MYSQLI_NUM);
                         for($i = 1; $i <= $num + 1; $i++){
                             echo "<option value ='{$i}' ";
                                 if(isset($_GET['position']) && $_GET['position'] == $i) 
