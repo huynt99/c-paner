@@ -2,9 +2,6 @@
 include_once('db/connect.php');
 include('function.php');
 
-include('views/header.php');
-include('views/sidebar-a.php');
-
 // hien thi page qua page id trong $_GET['pid']
 function getPageById($pid)
 {
@@ -20,12 +17,38 @@ function getPageById($pid)
     return $res;
 }
 
-function postTemplate($title, $text, $author_name, $date)
+if ($pid = validateId($_GET['pid'])) {
+    $res = getPageById($pid);
+    $aPosts = array();
+    $title = '';
+    if (!empty($res)) {
+        if (mysqli_num_rows($res) == 1) {
+            while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+                $title = $row['page_name'];
+                $aPosts[] = array(
+                    'pageName' => $row['page_name'],
+                    'content' => $row['content'],
+                    'authorName' => $row['name'],
+                    'date' => $row['date']
+                );
+            }
+        }
+    } else {
+        redirectTo();
+    }
+} else {
+    redirectTo();
+}
+
+include('views/header.php');
+include('views/sidebar-a.php');
+
+function postTemplate($pageName, $text, $authorName, $date)
 {
     echo "<div class='post'>
-                <h2>{$title}</h2>
+                <h2>{$pageName}</h2>
                 <p>{$text}</a></p>
-                <p class='meta'><strong>Post by</strong>: {$author_name} <strong>On</strong>: {$date}</p>
+                <p class='meta'><strong>Post by</strong>: {$authorName} <strong>On</strong>: {$date}</p>
             </div>";
 }
 ?>
@@ -33,23 +56,8 @@ function postTemplate($title, $text, $author_name, $date)
 <div id="content">
 
     <?php
-    if ($pid = validateId($_GET['pid'])) {
-        $res = getPageById($pid);
-        if (!empty($res)) {
-            if (mysqli_num_rows($res) == 1) {
-                while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-                    $page_name = $row['page_name'];
-                    $text = $row['content'];
-                    $author_name = $row['name'];
-                    $date = $row['date'];
-                    postTemplate($page_name, $text, $author_name, $date);
-                }
-            }
-        } else {
-            redirectTo();
-        }
-    } else {
-        redirectTo();
+    foreach ($aPosts as $post) {
+        postTemplate($post['pageName'], $post['content'], $post['authorName'], $post['date']);
     }
     ?>
 </div>

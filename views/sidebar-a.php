@@ -27,7 +27,7 @@
 
                 echo "<ul class='pages'>";
                 while ($page = mysqli_fetch_array($que, MYSQLI_ASSOC)) { 
-                    echo "<li><a href='index.php?pid={$page['page_id']}'";
+                    echo "<li><a href='single.php?pid={$page['page_id']}'";
                     if($page['page_id'] == $pid) echo "class=''selected";
                     echo ">" . $page['page_name'] . "</a></li>";
                 }

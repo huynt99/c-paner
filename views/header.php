@@ -4,7 +4,7 @@
 <head>
     <meta charset='UTF-8' />
 
-    <title></title>
+    <title><?php echo (isset($title)) ? $title : 'izCMS'?></title>
 
     <link rel='stylesheet' href='style.css' />
 </head>
