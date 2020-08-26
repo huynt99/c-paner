@@ -45,7 +45,7 @@ include('sidebar-a.php');
             $que .= " JOIN users AS u";
             $que .= " USING(user_id)";
             $que .= " ORDER BY {$order_by}";
-            $res = mysqli_query($con, $que);
+            $res = resultQuery($que);
             while ($row = mysqli_fetch_array($res)) :
             ?>
                 <tr>

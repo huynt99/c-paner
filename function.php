@@ -2,14 +2,16 @@
 
 define('base', 'http://localhost:8080/PHPBasic/izcms/');
 
-function redirect_to($page = 'index.php')
+//dieu huong trang
+function redirectTo($page = 'index.php')
 {
     $url = base . $page;
     header("Location: $url");
     die();
 }
 
-function confirm_query($res, $que)
+//xac nhan truy van co so du lieu 
+function confirmQuery($res, $que)
 {
     global $con;
     if (empty($res)) {
@@ -17,29 +19,55 @@ function confirm_query($res, $que)
     }
 }
 
-function beauty_text($text){
+//truy van co so du lieu, xac nhan lenh truy van co thuc hien khong -> roi tra ve ket qua
+function resultQuery($que)
+{
+    global $con;
+    $res = mysqli_query($con, $que);
+    confirmQuery($res, $que);
+    return $res;
+}
+
+//lam dep van ban hien thi tren trang 
+function beautifyText($text)
+{
     return substr($text, 0, strrpos($text, ' '));
 }
 
-function validate_id($cid){
-    if(isset($cid) && filter_var($cid, FILTER_VALIDATE_INT, array('min_range' => 1))){
-        return $val = $cid;
+//kiem tra $_GET['id'] tren url
+function validateId($id)
+{
+    if (filter_var($id, FILTER_VALIDATE_INT, array('min_range' => 1))) {
+        return $id;
     } else {
         return NULL;
     }
 }
 
-function get_page_by_id($pid){
-    global $con;
-    $que = "SELECT p.page_name, p.page_id, LEFT(p.content, 400) as content, ";
-    $que .= " DATE_FORMAT(p.post_on, '%b %d %y') AS date, ";
-    $que .= " CONCAT_WS(' ' , u.first_name, u.last_name) AS name, u.user_id ";
-    $que .= " FROM pages AS p ";
-    $que .= " INNER JOIN users AS u ";
-    $que .= " USING (user_id) ";
-    $que .= " WHERE p.cat_id = {$pid} ";
-    $que .= " ORDER BY date LIMIT 0, 10";
-    $res = mysqli_query($con, $que);
-    confirm_query($res, $que);
-    return $res;
+// kiem tra $_GET['id'] cung voi $_GET['name']
+function validateIDName($id, $name)
+{
+    if (filter_var($id, FILTER_VALIDATE_INT, array('min_range' => 1))) {
+        $aIdAndName = [
+            $id,
+            $name
+        ];
+        return $aIdAndName;
+    } else {
+        return NULL;
+    }
+}
+
+//kiem tra id co trong csdl khong
+function checkID($getId, $idSelect, $tableSelect)
+{
+    $que = "SELECT $idSelect FROM $tableSelect";
+    $que .= " WHERE cat_id = {$getId}";
+    $res = resultQuery($que);
+    if (mysqli_num_rows($res) == 0) {
+        // $cid ko hợp lệ sẽ thông báo 
+        return "<p class='warning'>The categories does not exists</p>";
+    } else {
+        return NULL;
+    }
 }

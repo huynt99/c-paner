@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (empty($error)) {
         $que = "INSERT INTO `categories`(`user_id`, `cate_name`, `position`)
                 VALUES (1, '" . $cate_name . "', '" . $position . "');";
-        $res = mysqli_query($con, $que);
+        $res = resultQuery($que);
         $nr = mysqli_affected_rows($con);
         if ($nr == 1) {
             $messages =  "<p class='success'>The categories was added successfully</p>";
@@ -45,24 +45,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         <fieldset>
             <div style="padding: 10px;">
                 <lable for="category">Categories name: </lable>
-                <input type="text" name="category" value="<?php echo (isset($_GET['category'])) ? strip_tags($_GET['category']) : '';?>">
+                <input type="text" name="category" value="<?php echo (isset($_GET['category'])) ? strip_tags($_GET['category']) : ''; ?>">
             </div>
             <div style="padding: 10px;">
                 <lable for="position">Position: </lable>
                 <select name="position" id="">
-                <?php
+                    <?php
                     $que = "SELECT COUNT(cat_id) AS count FROM categories";
-                    $res = mysqli_query($con, $que);
-                    if(mysqli_num_rows($res) == 1){
+                    $res = resultQuery($que);
+                    if (mysqli_num_rows($res) == 1) {
                         list($num) = mysqli_fetch_array($res, MYSQLI_NUM);
-                        for($i = 1; $i <= $num + 1; $i++){
+                        for ($i = 1; $i <= $num + 1; $i++) {
                             echo "<option value ='{$i}' ";
-                                if(isset($_GET['position']) && $_GET['position'] == $i) 
-                                    echo "selected='selected";
-                            echo ">".$i."</option>";
+                            if (isset($_GET['position']) && $_GET['position'] == $i)
+                                echo "selected='selected";
+                            echo ">" . $i . "</option>";
                         }
                     }
-                ?>
+                    ?>
                 </select>
             </div>
             <div style="padding: 10px;"><input type="submit" name="submit" value="submit"></div>
