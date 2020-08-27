@@ -71,3 +71,48 @@ function checkID($getId, $idSelect, $tableSelect)
         return NULL;
     }
 }
+
+//tao the <p> khi xuat CSDL
+function theContent($text)
+{
+    $cText = htmlentities($text, ENT_COMPAT, 'UTF-8');
+    return str_replace(array("\r\n", "\n"), array("<p>", "</p>"), $cText);
+}
+
+// hien thi bai viet duoi dang ngan gon
+function postTemplate($pageId, $pageName, $pageContent, $count, $userId, $author, $date)
+{
+    echo "<div class='post'>
+            <h2><a href='single.php?pid={$pageId}'>{$pageName}</a></h2>
+            <p class='comments'><a href='single.php?pid={$pageId}#disscuss'>{$count}</a></p>
+            <p>" . beautifyText($pageContent) . " ... <a href='single.php?pid={$pageId}'>Read more</a></p>
+            <p class='meta'><strong>Post by</strong>: <a href='author.php?aid={$userId}'>{$author}</a> 
+            <strong>On</strong>: {$date}</p>
+        </div>";
+}
+
+// hien thi bai viet duoi dang day du 
+function fullTemplate($pageName, $text, $authorName, $authorID, $date)
+{
+    echo "<div class='post'>
+                <h2>{$pageName}</h2>
+                <p>" . theContent($text) . "</p>
+                <p class='meta'><strong>Post by</strong>: <a href=author.php?aid={$authorID}>{$authorName}</a> <strong>On</strong>: {$date}</p>
+            </div>";
+}
+
+
+//captcha
+function captcha()
+{
+    $capt = [
+        1 => ['question' => "mot cong mot", 'answer' => 2],
+        2 => ['question' => "mot cong hai", 'answer' => 3],
+        3 => ['question' => "mot cong ba", 'answer' => 4],
+        4 => ['question' => "mot cong bon", 'answer' => 5],
+        5 => ['question' => "mot cong nam", 'answer' => 6]
+    ];
+    $ran_key = array_rand($capt);
+    $_SESSION['ques'] = $capt[$ran_key];    // luu lai cau hoi de doi chieu voi ket qua
+    return $ques = $capt[$ran_key]['question'];
+}
