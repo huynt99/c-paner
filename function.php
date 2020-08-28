@@ -116,3 +116,16 @@ function captcha()
     $_SESSION['ques'] = $capt[$ran_key];    // luu lai cau hoi de doi chieu voi ket qua
     return $ques = $capt[$ran_key]['question'];
 }
+
+// ham su dung de loai bo nhung ki tu dac biet tránh spam mail
+function cleanEmail($value)
+{
+    $sub = ['to:', 'bcc:', 'content-type:', 'mine-version:', 'multipart-mixed', 'content-transfer-encoding:'];
+    foreach ($sub as $s) {
+        if (strpos($value, $s) !== FALSE) {
+            return '';
+        }
+        $value = str_replace(array('\n', '\r', '%0a', '%0d'), '', $value);
+        return trim($value);
+    }
+}

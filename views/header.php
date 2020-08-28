@@ -9,7 +9,7 @@ session_start();
 
     <title><?php echo (isset($title)) ? $title : 'izCMS'?></title>
 
-    <link rel='stylesheet' href='style.css' />
+    <link rel='stylesheet' href='assets/style.css' />
 </head>
 
 <body>
@@ -23,7 +23,7 @@ session_start();
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>About</a></li>
                 <li><a href='#'>Services</a></li>
-                <li><a href='#'>Contact us</a></li>
+                <li><a href='contact.php'>Contact us</a></li>
             </ul>
 
             <p class="greeting">Xin chào bạn hiền!</p>
