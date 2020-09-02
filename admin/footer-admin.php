@@ -3,10 +3,8 @@
         <a href="../index.php">Home page</a>
     </div>
     <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="../register.php">Register</a></li>
+        <li><a href="../login.php">Login</a></li>
     </ul>
 </div>
 <!--end footer-->
@@ -14,5 +12,4 @@
 </div>
 <!--end container-->
 </body>
-
 </html>

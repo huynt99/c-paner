@@ -1,6 +1,6 @@
 <?php
-
-define('base', 'http://localhost:8080/PHPBasic/izcms/');
+session_start();
+define('base', 'http://izcms.huy.com/');
 
 //dieu huong trang
 function redirectTo($page = 'index.php')

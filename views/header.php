@@ -1,5 +1,6 @@
 <?php
-session_start();
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,7 @@ session_start();
 <head>
     <meta charset='UTF-8' />
 
-    <title><?php echo (isset($title)) ? $title : 'izCMS'?></title>
+    <title><?php echo "izCMS - " . ((isset($title)) ? $title : '');?></title>
 
     <link rel='stylesheet' href='assets/style.css' />
 </head>

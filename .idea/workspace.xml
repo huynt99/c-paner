@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea5baa09-15ff-4d52-a837-bae66798a719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/huy-izweb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/delete-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete-categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/delete-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete-pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/footer-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header-admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sidebar-a.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/sidebar-a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sidebar-b.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/sidebar-b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view-categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/view-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view-pages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/createdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/createdb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/comment-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/comment-form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sidebar-a.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar-a.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sidebar-b.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar-b.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1gldrOBGVMc23qbJljl7inGrX88" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="huy-izweb" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.huy-izweb" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea5baa09-15ff-4d52-a837-bae66798a719" name="Default Changelist" comment="" />
+      <created>1598693313741</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598693313741</updated>
+      <workItem from="1598693316027" duration="806000" />
+      <workItem from="1598698249861" duration="599000" />
+      <workItem from="1598714888343" duration="2194000" />
+      <workItem from="1598717627838" duration="1219000" />
+      <workItem from="1598857833852" duration="1551000" />
+      <workItem from="1598860295566" duration="1586000" />
+      <workItem from="1598862041389" duration="456000" />
+      <workItem from="1598863072386" duration="7092000" />
+      <workItem from="1598931030680" duration="288000" />
+      <workItem from="1598931335441" duration="4434000" />
+      <workItem from="1598950992379" duration="5906000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="362" y="1107" width="700" height="741" key="#PHP" timestamp="1598954542640">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="362" y="1107" width="700" height="741" key="#PHP/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598954542640" />
+    <state x="120" y="27" width="844" height="735" key="#Plugins" timestamp="1598717799413">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="120" y="27" width="844" height="735" key="#Plugins/72.27.1294.741/1366.0.1920.1080@72.27.1294.741" timestamp="1598717799413" />
+    <state x="177" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598717978695">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="177" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741/1366.0.1920.1080@72.27.1294.741" timestamp="1598717978695" />
+    <state x="644" y="1258" width="749" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598945157310">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="644" y="1258" key="#com.intellij.fileTypes.FileTypeChooser/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598945157310" />
+    <state x="339" y="199" width="749" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741/1366.0.1920.1080@72.27.1294.741" timestamp="1598714916625" />
+    <state x="811" y="1403" width="399" height="156" key="NewPhpFileDialog" timestamp="1598945970050">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="811" y="1403" width="399" height="156" key="NewPhpFileDialog/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598945970050" />
+    <state x="548" y="1107" width="900" height="741" key="SettingsEditor" timestamp="1598951189979">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="537" y="172" width="900" height="737" key="SettingsEditor/362.1080.1366.768/0.0.1670.1080@0.0.1670.1080" timestamp="1598862496792" />
+    <state x="548" y="1107" width="900" height="741" key="SettingsEditor/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598951189979" />
+    <state x="1815" y="175" width="1022" height="737" key="SettingsEditor/72.27.1294.741/1366.0.1920.1080@1366.0.1920.1080" timestamp="1598718845848" />
+    <state x="797" y="1392" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598951221393">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="797" y="1392" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598951221393" />
+    <state x="679" y="1169" width="672" height="678" key="search.everywhere.popup" timestamp="1598945945403">
+      <screen x="362" y="1080" width="1366" height="768" />
+    </state>
+    <state x="679" y="1169" width="672" height="678" key="search.everywhere.popup/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598945945403" />
+  </component>
+</project>

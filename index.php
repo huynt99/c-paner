@@ -18,12 +18,10 @@ function getPageById($cid)
     $que .= " WHERE p.cat_id = {$cid} ";
     $que .= " GROUP BY page_id ";
     $que .= " ORDER BY `content` ASC LIMIT 0, 10 ";
-
-    return $res = resultQuery($que);
+    return resultQuery($que);
 }
 
 ?>
-
 
 <div id="content">
     <?php

@@ -1,12 +1,11 @@
+
 <div id="footer">
     <div style="float: left;">
     <a href="admin/index.php">Admin page</a>
     </div>
     <ul class="footer-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="login.php">Login</a></li>
     </ul>
 </div>
 <!--end footer-->

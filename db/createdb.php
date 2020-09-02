@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '');
+$conn = mysqli_connect('localhost', 'dkmmysql', 'root');
 
 $que = "CREATE DATABASE IF NOT EXISTS huy_izcms";
 $conn->query($que);
@@ -24,7 +24,7 @@ $que = "INSERT INTO `categories` (`cat_id`, `user_id`, `cate_name`, `position`) 
         ";
 $conn->query($que);
 
-$que =  "ALTER TABLE categories AUTO_INCREMENT=6;";
+$que = "ALTER TABLE categories AUTO_INCREMENT=6;";
 $conn->query($que);
 
 // pages
@@ -35,7 +35,7 @@ $pages = "  CREATE TABLE IF NOT EXISTS `pages`(
             `page_name` VARCHAR(150) NOT NULL,
             `content` TEXT NOT NULL,
             `position` TINYINT NOT NULL,
-            `post_on` DATETIME NOT NULL,
+            `post_on` TIMESTAMP NOT NULL,
             INDEX(`user_id`, `cat_id`, `position`, `post_on`)
     );
 ";
@@ -52,7 +52,7 @@ $que = "INSERT INTO `pages` (`page_id`, `user_id`, `cat_id`, `page_name`, `conte
         ";
 $conn->query($que);
 
-$que =  "ALTER TABLE pages AUTO_INCREMENT=9;";
+$que = "ALTER TABLE pages AUTO_INCREMENT=9;";
 $conn->query($que);
 
 // users
@@ -66,20 +66,20 @@ $users = "  CREATE TABLE IF NOT EXISTS `users`(
             `yahoo` VARCHAR(80),
             `bio` TEXT,
             `avatar` VARCHAR(30),
-            `user_lever` TINYINT NOT NULL,
+            `user_lever` TINYINT DEFAULT 1, 
             `active` VARCHAR(60),
-            `registrantion_date` DATETIME NOT NULL,
+            `registrantion_date` TIMESTAMP NOT NULL,
             INDEX(`registrantion_date`)
     );
 ";
 $conn->query($users);
 
 $que = "INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `pass`, `website`, `yahoo`, `bio`, `avatar`, `user_lever`, `active`, `registrantion_date`) VALUES
-        (1, 'Huy', 'Nguyễn', 'huhuhaha1507@gmail.com', '123', NULL, NULL, NULL, NULL, 1, NULL, '0000-00-00 00:00:00');
+        (1, 'Huy', 'Nguyễn', 'huhuhaha1507@gmail.com', '123', NULL, NULL, NULL, NULL, 1, 1, '0000-00-00 00:00:00');
         ";
 $conn->query($que);
 
-$que =  "ALTER TABLE users AUTO_INCREMENT=2;";
+$que = "ALTER TABLE users AUTO_INCREMENT=2;";
 $conn->query($que);
 
 // commnents

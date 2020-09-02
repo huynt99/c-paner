@@ -30,18 +30,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $body = "Name: {$clean['name']} \n\n Message: \n" . trim(strip_tags($clean['message']));
         $body = wordwrap($body);
         if (mail($email, 'Contact form', $body, 'FROM: huyng9x157@gmail.com')) {
-            $message =  "<p class='success'>Thank you for contacting me!</p>";
+            $messages =  "<p class='success'>Thank you for contacting me!</p>";
         } else {
-            $message =  "<p class='warning'>Your email could not be sent!</p>";
+            $messages =  "<p class='warning'>Your email could not be sent!</p>";
         }
     } else {
-        $message =  "<p class='warning'>Please fill all the required fields!</p>";
+        $messages =  "<p class='warning'>Please fill all the required fields!</p>";
     }
 }
 ?>
 <div id="content">
     <form id="contact" method="POST">
-        <?php echo (isset($message)) ? $message : ''; ?>
+        <?php echo (isset($messages)) ? $messages : ''; ?>
         <fieldset>
             <legend>Contact</legend>
             <div>
