@@ -1,5 +1,4 @@
 <?php
-session_start();
 define('base', 'http://izcms.huy.com/');
 
 //dieu huong trang
@@ -8,6 +7,14 @@ function redirectTo($page = 'index.php')
     $url = base . $page;
     header("Location: $url");
     die();
+}
+
+// dieu huong trang kem theo thong bao alert message
+function redirectAlert($message, $page){
+    echo "<script type='text/javascript'>
+           alert('".$message."');
+           window.location = '$page';
+        </script>";
 }
 
 //xac nhan truy van co so du lieu 

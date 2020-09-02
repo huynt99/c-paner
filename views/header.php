@@ -1,6 +1,7 @@
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,5 +28,5 @@ error_reporting(E_ALL);
                 <li><a href='contact.php'>Contact us</a></li>
             </ul>
 
-            <p class="greeting">Xin chào bạn hiền!</p>
+            <p class="greeting">Xin chào <?php isset($_SESSION['fname']) ? $_SESSION['fname'] : 'bạn hiền'?></p>
         </div><!-- end navigation-->
