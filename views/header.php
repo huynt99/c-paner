@@ -28,5 +28,5 @@ session_start();
                 <li><a href='contact.php'>Contact us</a></li>
             </ul>
 
-            <p class="greeting">Xin chào <?php isset($_SESSION['fname']) ? $_SESSION['fname'] : 'bạn hiền'?></p>
+            <p class="greeting">Xin chào <?php echo isset($_SESSION['fname']) ? $_SESSION['fname'] : 'bạn hiền!';?></p>
         </div><!-- end navigation-->

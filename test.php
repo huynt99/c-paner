@@ -2,7 +2,6 @@
 include('function.php');
 include('db/connect.php');
 
-
-			echo "<script type='text/javascript'>alert('Your account login successfully!');</script>";
-			
-			redirectTo('admin/index.php');
+$que = "UPDATE `users` SET active = NULL WHERE active = NULL AND email = 'vitchin@gmail.com';";
+$res = resultQuery($que);
+echo mysqli_affected_rows($con);

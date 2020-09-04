@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('../db/connect.php');
 include_once('../function.php');
 ?>
@@ -27,5 +28,5 @@ include_once('../function.php');
                 <li><a href='#!'>Contact us</a></li>
             </ul>
 
-            <p class="greeting">Xin chào bạn hiền!</p>
+            <p class="greeting">Xin chào <?php echo isset($_SESSION['fname']) ? $_SESSION['fname'] : 'bạn hiền!';?></p>
         </div><!-- end navigation-->

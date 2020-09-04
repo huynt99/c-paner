@@ -3,8 +3,10 @@
         <a href="../index.php">Home page</a>
     </div>
     <ul class="footer-links">
-        <li><a href="../register.php">Register</a></li>
-        <li><a href="../login.php">Login</a></li>
+        <li><a href="../profile.php">User profile</a></li>
+        <li><a href="../change-password.php">Change password</a></li>
+        <li><a href="../admin/index.php">Admin manager</a></li>
+        <li><a href="../logout.php">Logout</a></li>
     </ul>
 </div>
 <!--end footer-->

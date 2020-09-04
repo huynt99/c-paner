@@ -1,4 +1,5 @@
 <?php
+
 include_once('db/connect.php');
 include('function.php');
 include('views/header.php');

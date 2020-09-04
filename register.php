@@ -50,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 			if (mysqli_affected_rows($con) == 1) {
 				// neu sql thanh cong thi bat nguoi dung kich hoat tai khoan
-				$messages
-					= "<p class='success'>Click <a href='./admin/activate.php?k={$k}&em='{$em}'>here</a> to continue!</p>";
+				$messages = "<p class='success'>Click <a href='./admin/activate.php?k=$k&em='" . $em .
+					"'>here</a> to continue!</p>";
 			} else {
 				$messages = "<p class='warning'>Oop! There's a bit of an error here. Please re-register!</p>";
 			}
