@@ -81,92 +81,6 @@ function checkID($getId, $idSelect, $tableSelect)
 	}
 }
 
-//tao the <p> khi xuat CSDL
-function theContent($text)
-{
-	$cText = htmlentities($text, ENT_COMPAT, 'UTF-8');
-	return str_replace(["\r\n", "\n"], ["<p>", "</p>"], $cText);
-}
-
-// hien thi bai viet duoi dang ngan gon
-function postTemplate($pageId, $pageName, $pageContent, $count, $userId, $author, $date)
-{
-	echo "<div class='post'>
-            <h2><a href='single.php?pid={$pageId}'>{$pageName}</a></h2>
-            <p class='comments'><a href='single.php?pid={$pageId}#disscuss'>{$count}</a></p>
-            <p>" . beautifyText($pageContent) . " ... <a href='single.php?pid={$pageId}'>Read more</a></p>
-            <p class='meta'><strong>Post by</strong>: <a href='author.php?aid={$userId}'>{$author}</a> 
-            <strong>On</strong>: {$date}</p>
-        </div>";
-}
-
-// hien thi bai viet duoi dang day du 
-function fullTemplate($pageName, $text, $authorName, $authorID, $date)
-{
-	echo "<div class='post'>
-                <h2>{$pageName}</h2>
-                <p>" . theContent($text) . "</p>
-                <p class='meta'><strong>Post by</strong>: <a href=author.php?aid={$authorID}>{$authorName}</a> <strong>On</strong>: {$date}</p>
-            </div>";
-}
-
-// input text cho form
-function templateInputText($name, $label, $postName = null, $error = [])
-{
-	echo "<div>
-            <label for='$name'>$label</label>";
-	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
-	echo "<input type='text' name='$name'' id='$name' required value=";
-	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
-	echo "> 
-          </div>";
-}
-
-// input email cho form
-function templateInputEmail($name, $label, $postName = null, $error = [])
-{
-	echo "<div>
-            <label for='$name'>$label</label>";
-	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
-	echo "<input type='email' name='$name'' id='$name' required value=";
-	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
-	echo ">
-	      </div>";
-}
-
-// input pass cho form
-function templateInputPass($name, $label, $postName = null, $error = [])
-{
-	echo "<div>
-            <label for='$name'>$label</label>";
-	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
-	echo "<input type='password' name='$name' id='$name' required value=";
-	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
-	echo ">
-		  </div>";
-}
-
-// textarea cho form
-function templateInputTextarea($name, $label, $postName = null, $error = [])
-{
-	echo "<div>
-            <label for='$name'>$label</label>";
-	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
-	echo "<div>
-                <textarea id='$name' name='$name' cols='30' rows='10' style='width: 350px; height: 100px;'>";
-	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
-	echo "</textarea>
-			</div>
-		 </div>";
-}
-
-// Input submit
-function templateInputSubmit($name)
-{
-	echo "<input type=\"submit\" name=\"submit\" value=\"$name\" style=\"width: 150px; height: 25px; margin: 10px;\">";
-}
-
-
 //captcha
 function captcha()
 {
@@ -194,3 +108,91 @@ function cleanEmail($value)
 		return trim($value);
 	}
 }
+
+
+//****************** Template ********************//
+//tao the <p> khi xuat CSDL
+function theContent($text)
+{
+	$cText = htmlentities($text, ENT_COMPAT, 'UTF-8');
+	return str_replace(["\r\n", "\n"], ["<p>", "</p>"], $cText);
+}
+
+// hien thi bai viet duoi dang ngan gon
+function postTemplate($pageId, $pageName, $pageContent, $count, $userId, $author, $date)
+{
+	echo "<div class='post'>
+	            <h2><a href='single.php?pid={$pageId}'>{$pageName}</a></h2>
+	            <p class='comments'><a href='single.php?pid={$pageId}#disscuss'>{$count}</a></p>
+	            <p>" . beautifyText($pageContent) . " ... <a href='single.php?pid={$pageId}'>Read more</a></p>
+	            <p class='meta'><strong>Post by</strong>: <a href='author.php?aid={$userId}'>{$author}</a> 
+	            <strong>On</strong>: {$date}</p>
+	        </div>";
+}
+
+// hien thi bai viet duoi dang day du
+function fullTemplate($pageName, $text, $authorName, $authorID, $date)
+{
+	echo "<div class='post'>
+	                <h2>{$pageName}</h2>
+	                <p>" . theContent($text) . "</p>
+	                <p class='meta'><strong>Post by</strong>: <a href=author.php?aid={$authorID}>{$authorName}</a> <strong>On</strong>: {$date}</p>
+	            </div>";
+}
+
+// input text cho form
+function templateInputText($name, $label, $postName = null, $error = [])
+{
+	echo "<div>
+	            <label for='$name'>$label</label>";
+	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
+	echo "<input type='text' name='$name'' id='$name' required value=";
+	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
+	echo "> 
+	          </div>";
+}
+
+// input email cho form
+function templateInputEmail($name, $label, $postName = null, $error = [])
+{
+	echo "<div>
+	            <label for='$name'>$label</label>";
+	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
+	echo "<input type='email' name='$name'' id='$name' required value=";
+	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
+	echo ">
+		      </div>";
+}
+
+// input pass cho form
+function templateInputPass($name, $label, $postName = null, $error = [])
+{
+	echo "<div>
+	            <label for='$name'>$label</label>";
+	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
+	echo "<input type='password' name='$name' id='$name' required value=";
+	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
+	echo ">
+			  </div>";
+}
+
+// textarea cho form
+function templateInputTextarea($name, $label, $postName = null, $error = [])
+{
+	echo "<div>
+	            <label for='$name'>$label</label>";
+	echo (isset($error) && in_array($name, $error)) ? "<p class='warning'>Please enter your $label</p>" : '';
+	echo "<div>
+	                <textarea id='$name' name='$name' cols='30' rows='10' style='width: 350px; height: 100px;'>";
+	echo (isset($postName)) ? htmlentities($postName, ENT_QUOTES, 'utf-8') : '';
+	echo "</textarea>
+				</div>
+			 </div>";
+}
+
+// Input submit
+function templateInputSubmit($name)
+{
+	echo "<input type=\"submit\" name=\"submit\" value=\"$name\" style=\"width: 150px; height: 25px; margin: 10px;\">";
+}
+//************************** end ***********************//

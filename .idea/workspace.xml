@@ -27,32 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ea5baa09-15ff-4d52-a837-bae66798a719" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/activate.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/activate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add-pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/delete-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete-categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/delete-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delete-pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit-pages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit-pages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/footer-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/sidebar-a.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/sidebar-a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/view-categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/view-categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/author.php" beforeDir="false" afterPath="$PROJECT_DIR$/author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/change-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/change-password.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/createdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/createdb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgot-password.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgot-password.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/comment-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/comment-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sidebar-a.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar-a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sidebar-b.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/sidebar-b.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
