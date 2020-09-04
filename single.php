@@ -45,7 +45,6 @@ include('views/sidebar-a.php');
 ?>
 
     <div id="content">
-
 		<?php
 		foreach ($aPosts as $post) {
 			fullTemplate($post['pageName'], $post['content'], $post['authorName'], $post['authorId'], $post['date']);
@@ -53,6 +52,7 @@ include('views/sidebar-a.php');
 		?>
 		<?php include('views/comment-form.php'); ?>
     </div>
+
 <?php
 include('views/sidebar-b.php');
 include('views/footer.php');
