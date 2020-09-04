@@ -2,10 +2,10 @@
 include('header-admin.php');
 include('sidebar-a.php');
 
-if(isset($_GET['k']) && isset($_GET['em'])){
+if (isset($_GET['k']) && isset($_GET['em'])) {
 	$key = validateId($_GET['k']);
 	$email = mysqli_real_escape_string($con, trim($_GET['em']));
-	if($key){
+	if ($key) {
 		$que = "UPDATE `users` SET active = NULL WHERE active = {$key} AND email = '{$email}';";
 		$res = resultQuery($que);
 		if (mysqli_affected_rows($con) == 1) {

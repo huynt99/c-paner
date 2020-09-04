@@ -1,4 +1,4 @@
-<div id="content-container">
+<div id="content-container" style="background-color: #e2e2e2;">
     <div id="section-navigation">
         <ul class="navi">
             <li><a href="add-categories.php">Add Categories</a></li>

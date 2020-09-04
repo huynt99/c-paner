@@ -14,10 +14,6 @@ include('sidebar-a.php');
 							$order_by = "cate_name";
 							break;
 
-						case 'pos':
-						    $order_by = "position";
-							break;
-
 						case 'by':
 							$order_by = "name";
 							break;
