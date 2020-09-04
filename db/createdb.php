@@ -75,7 +75,7 @@ $users = "  CREATE TABLE IF NOT EXISTS `users`(
 $conn->query($users);
 
 $que = "INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `pass`, `website`, `yahoo`, `bio`, `avatar`, `user_lever`, `active`, `registrantion_date`) VALUES
-        (1, 'Huy', 'Nguyễn', 'huhuhaha1507@gmail.com', '123', NULL, NULL, NULL, NULL, 1, 1, '0000-00-00 00:00:00');
+        (1, 'Huy', 'Nguyễn', 'nth@gmail.com', '1234', NULL, NULL, NULL, NULL, 0, NULL, '0000-00-00 00:00:00');
         ";
 $conn->query($que);
 
