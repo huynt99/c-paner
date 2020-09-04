@@ -1,3 +1,5 @@
 views/recaptchalib.php
 test.php
 .idea
+db/connect.php
+db/createdb.php
