@@ -12,6 +12,8 @@ session_start();
     <title><?php echo "izCMS - " . ((isset($title)) ? $title : ''); ?></title>
 
     <link rel='stylesheet' href='assets/style.css'/>
+    <script type="text/javascript" src="assets/jquery.js"></script>
+    <script type="text/javascript" src="assets/check-ajax.js"></script>
 </head>
 
 <body>

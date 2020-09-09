@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="fname">First name</label>
 				<?php if (isset($error) &&
 					in_array('fname', $error)) echo "<p class='warning'>Please enter your fname</p>" ?>
-                <input type="text" name="fname" id="fname" required
+                <input type="text" name="fname" id="fname"
                        value="<?php echo isset($_POST['fname']) ? htmlentities($_POST['fname'], ENT_QUOTES, 'utf-8') :
 					       '' ?>">
             </div>
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="lname">Last name</label>
 				<?php if (isset($error) &&
 					in_array('lname', $error)) echo "<p class='warning'>Please enter your lname</p>" ?>
-                <input type="text" name="lname" id="lname" required
+                <input type="text" name="lname" id="lname"
                        value="<?php echo isset($_POST['lname']) ? htmlentities($_POST['lname'], ENT_QUOTES, 'utf-8') :
 					       '' ?>">
             </div>
@@ -88,22 +88,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="email">Email</label>
 				<?php if (isset($error) &&
 					in_array('email', $error)) echo "<p class='warning'>Please enter your email</p>" ?>
-                <input type="email" name="email" id="email" required
+                <input type="email" name="email" id="email"
                        value="<?php echo isset($_POST['email']) ? htmlentities($_POST['email'], ENT_QUOTES, 'utf-8') :
 					       '' ?>">
+                <span id="val"></span>
             </div>
             <div>
                 <label for="pass">Password</label>
 				<?php if (isset($error) &&
 					in_array('pass', $error)) echo "<p class='warning'>Please enter your password</p>" ?>
-                <input type="password" name="pass" id="pass" required>
-                <span id="value"></span>
+                <input type="password" name="pass" id="pass" >
             </div>
             <div>
                 <label for="cpass">Confirm password</label>
 				<?php if (isset($error) &&
 					in_array('cpass', $error)) echo "<p class='warning'>Please enter your confirm password</p>" ?>
-                <input type="password" name="cpass" id="cpass" required>
+                <input type="password" name="cpass" id="cpass" >
             </div>
         </fieldset>
         <input type="submit" name="submit" value="Register" style="width: 100px; height: 25px;">
