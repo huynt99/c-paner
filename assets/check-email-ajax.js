@@ -6,7 +6,7 @@ $(document).ready(function () {
 
             $.ajax({
                 type: "get",
-                url: "check.php",
+                url: "check-email-ajax.php",
                 data: "email=" + email,
                 success: function (response) {
                     if (response == 'yes') {

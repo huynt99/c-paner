@@ -43,15 +43,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 <?php
 // hien thi comment
-$que = "SELECT author, comment, DATE_FORMAT(comment_date, '%b %d %y') AS date FROM `comments` WHERE page_id = {$pid}";
+$que = "SELECT comment_id, author, comment, DATE_FORMAT(comment_date, '%b %d %y') AS date FROM `comments` WHERE page_id = {$pid}";
 $res = resultQuery($que);
 if (mysqli_num_rows($res) > 0) {
 	echo "<ol id='disscuss'>";
-	while (list($author, $comment, $date) = mysqli_fetch_row($res)) {
-		echo "<li>
+	while (list($cmtId, $author, $comment, $date) = mysqli_fetch_row($res)) {
+		echo "<li class='comment-wrap'>
                 <p class='author'>{$author}</p>
-                <p class='comment-wrap'>{$comment}</p>
-                <p class='date'>{$date}</p>
+                <p>{$comment}</p>";
+		if (isset($_SESSION['level']) && $_SESSION['level'] == 0) echo "<a id='{$cmtId}' class='remove'>Delete</a>";
+
+		echo    "<p class='date'>{$date}</p>
                 </li>";
 	}
 	echo "</ol>";

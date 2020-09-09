@@ -13,7 +13,8 @@ session_start();
 
     <link rel='stylesheet' href='assets/style.css'/>
     <script type="text/javascript" src="assets/jquery.js"></script>
-    <script type="text/javascript" src="assets/check-ajax.js"></script>
+    <script type="text/javascript" src="assets/check-email-ajax.js"></script>
+    <script type="text/javascript" src="assets/delete-comment-ajax.js"></script>
 </head>
 
 <body>
