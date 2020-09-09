@@ -97,6 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<?php if (isset($error) &&
 					in_array('pass', $error)) echo "<p class='warning'>Please enter your password</p>" ?>
                 <input type="password" name="pass" id="pass" required>
+                <span id="value"></span>
             </div>
             <div>
                 <label for="cpass">Confirm password</label>
