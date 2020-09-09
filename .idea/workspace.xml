@@ -29,12 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea5baa09-15ff-4d52-a837-bae66798a719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/delete-comment-ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/delete-comment-ajax.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/check-ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/check-email-ajax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.php" beforeDir="false" afterPath="$PROJECT_DIR$/check-email-ajax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/comment-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/comment-form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/check-email-ajax.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,12 +61,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="check-ajax" />
-                    <option name="lastUsedInstant" value="1599638638" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1599644947" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1599637736" />
+                    <option name="branchName" value="check-ajax" />
+                    <option name="lastUsedInstant" value="1599638638" />
                   </RecentBranch>
                 </list>
               </option>

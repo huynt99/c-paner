@@ -12,6 +12,8 @@ session_start();
     <title><?php echo "izCMS - " . ((isset($title)) ? $title : ''); ?></title>
 
     <link rel='stylesheet' href='assets/style.css'/>
+    <script src="../assets/tinymce/js/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
     <script type="text/javascript" src="assets/jquery.js"></script>
     <script type="text/javascript" src="assets/check-email-ajax.js"></script>
     <script type="text/javascript" src="assets/delete-comment-ajax.js"></script>
