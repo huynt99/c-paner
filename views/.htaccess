@@ -1,0 +1,8 @@
+ Options All -Insexes
+
+ IndexIgnore *
+
+#  <FileMatch '^.*$'>
+#  Order deny, allow
+#  deny from all
+#  </FileMatch>

@@ -51,7 +51,7 @@ if (mysqli_num_rows($res) > 0) {
 		echo "<li class='comment-wrap'>
                 <p class='author'>{$author}</p>
                 <p>{$comment}</p>";
-		if (isset($_SESSION['level']) && $_SESSION['level'] == 0) echo "<a id='{$cmtId}' class='remove'>Delete</a>";
+		if (isAdmin()) echo "<a id='{$cmtId}' class='remove'>Delete</a>";
 
 		echo    "<p class='date'>{$date}</p>
                 </li>";

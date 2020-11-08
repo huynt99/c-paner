@@ -2,6 +2,7 @@
 session_start();
 include_once('../db/connect.php');
 include_once('../function.php');
+adminAccess();
 ?>
 <!DOCTYPE html>
 <html style="background-color: #e2e2e2">

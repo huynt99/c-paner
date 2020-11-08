@@ -14,7 +14,7 @@ function redirectAlert($message, $page = 'index.php')
 {
 	$url = base . $page;
 	echo "<script type='text/javascript'>
-           alert('" . $message . "');
+           alert('" . $message . "');;
            window.location = '$url';
         </script>";
 }
@@ -109,6 +109,43 @@ function cleanEmail($value)
 	}
 }
 
+// file admin
+function isAdmin()
+{
+	return isset($_SESSION['level']) && ($_SESSION['level'] == 0);
+}
+
+function adminAccess()
+{
+	if (!isAdmin()) {
+		redirectTo();
+	}
+}
+
+//count page views
+function counterView($pageId)
+{
+	$ip = $_SERVER['REMOTE_ADDR'];
+	global $con;
+
+	//truy van de kiem tra page co ton tai trong page_views chua
+	$que = "SELECT num_views, user_ip FROM page_views WHERE page_id=$pageId";
+	$res = resultQuery($que);
+
+	if (mysqli_num_rows($res) > 0) {
+		// neu da ton tai va user_ip bang voi $ip nguoi dang su dung thi them luot xem vao csdl
+		list($numViews, $userIp) = mysqli_fetch_row($res);
+		if ($userIp !== $ip) {
+			$que = "UPDATE page_views SET num_views=num_views+1 WHERE page_id=$pageId LIMIT 1;";
+			$res = resultQuery($que);
+		}
+	} else {
+		//neu chua thi them page vao page_views
+		$que = "INSERT INTO page_views(page_id, user_ip) VALUES ($pageId, '{$ip}');";
+		$res = resultQuery($que);
+	}
+}
+
 
 //****************** Template ********************//
 //tao the <p> khi xuat CSDL
@@ -131,12 +168,14 @@ function postTemplate($pageId, $pageName, $pageContent, $count, $userId, $author
 }
 
 // hien thi bai viet duoi dang day du
-function fullTemplate($pageName, $text, $authorName, $authorID, $date)
+function fullTemplate($pageName, $text, $authorName, $authorID, $date, $page_views)
 {
 	echo "<div class='post'>
 	                <h2>{$pageName}</h2>
 	                <p>" . theContent($text) . "</p>
-	                <p class='meta'><strong>Post by</strong>: <a href=author.php?aid={$authorID}>{$authorName}</a> <strong>On</strong>: {$date}</p>
+	                <p class='meta'><strong>Post by</strong>: <a href=author.php?aid={$authorID}>{$authorName}</a> 
+	                    <strong>On</strong>: {$date}| <strong>Views</strong>:{$page_views}
+	                </p>
 	            </div>";
 }
 
