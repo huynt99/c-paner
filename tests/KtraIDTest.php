@@ -15,12 +15,12 @@ class KtraIDTest extends TestCase
         return $this->test;
     }
 
-    public function testResultQuery()
-    {
-        $que = "INSERT INTO `users`(`first_name`, `last_name`, `email`, `pass`, `registrantion_date`)";
-        $que .= " VALUE ('Chien', 'Do', 'dqc1@gmail.com', '123', now())";
-        $this->assertTrue($this->newTest()->resultQuery($que));
-    }
+//    public function testResultQuery()
+//    {
+//        $que = "INSERT INTO `users`(`first_name`, `last_name`, `email`, `pass`, `registrantion_date`)";
+//        $que .= " VALUE ('Huhu', 'Haha', 'huhuhaha@gmail.com', '123', now())";
+//        $this->assertTrue($this->newTest()->resultQuery($que));
+//    }
 
     public function testCheckID()
     {
@@ -29,8 +29,12 @@ class KtraIDTest extends TestCase
 
     public function testCheckID1()
     {
-        $this->assertFalse($this->newTest()->checkID('user_id',99, '*', 'users'));
+        $this->assertTrue($this->newTest()->checkID('user_id',8, '*', 'users'));
     }
 
+    public function testCheckID2()
+    {
+        $this->assertFalse($this->newTest()->checkID('user_id',99, '*', 'users'));
+    }
 }
 

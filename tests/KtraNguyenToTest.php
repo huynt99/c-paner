@@ -17,21 +17,21 @@ class KtraNguyenToTest extends TestCase
 
     public function testIsNT()
     {
-        $this->assertTrue($this->newKtra()->isNT(13));
+        $this->assertTrue($this->newKtra()->isNT(3));
     }
 
     public function testIsNT1()
     {
-        $this->assertTrue($this->newKtra()->isNT(17));
+        $this->assertTrue($this->newKtra()->isNT(5));
     }
 
     public function testIsNT2()
     {
-        $this->assertFalse($this->newKtra()->isNT(10));
+        $this->assertFalse($this->newKtra()->isNT(0));
     }
 
     public function testIsNT3()
     {
-        $this->assertFalse($this->newKtra()->isNT(0));
+        $this->assertFalse($this->newKtra()->isNT(4));
     }
 }

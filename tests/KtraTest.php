@@ -31,7 +31,7 @@ class KtraTest extends TestCase
 
     public function testKtra4()
     {
-        $this->assertFalse($this->para()->ktra->Ktra(1, [1, 2, 3, 4]));
+        $this->assertFalse($this->para()->ktra->Ktra(1, [0, 1, 2, 3]));
     }
 
 }

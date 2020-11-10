@@ -29,28 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea5baa09-15ff-4d52-a837-bae66798a719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/check-email-ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit-9.4.2.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ktra.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KtraID.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/KtraNguyenTo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/EmailTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/KtraIDTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/KtraNguyenToTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/KtraTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/huy-izweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/huy-izweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/header-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/comment-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/comment-form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KtraID.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/KtraID.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/KtraIDTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/KtraIDTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/KtraNguyenToTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/KtraNguyenToTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/KtraTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/KtraTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,9 +134,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wordpress/wp1" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -163,7 +147,7 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.CheckIDTest.testResultQuery">
+  <component name="RunManager" selected="PHPUnit.KtraNguyenToTest">
     <configuration name="CheckIDTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="CheckIDTest" configuration_file="$PROJECT_DIR$/function.php" file="$PROJECT_DIR$/tests/KtraIDTest.php" scope="Class" />
       <method v="2" />
@@ -176,8 +160,8 @@
       <TestRunner class="EmailTest" configuration_file="$PROJECT_DIR$/function.php" file="$PROJECT_DIR$/tests/EmailTest.php" method="testCannotBeCreatedFromInvalidEmailAddress" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Test" file="$PROJECT_DIR$/Test.php" scope="Class" />
+    <configuration name="KtraNguyenToTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="KtraNguyenToTest" configuration_file="$PROJECT_DIR$/function.php" file="$PROJECT_DIR$/tests/KtraNguyenToTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="UnTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -188,20 +172,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="PHP Script.KtraID.php" />
       <item itemvalue="PHPUnit.UnTest" />
-      <item itemvalue="PHPUnit.Test" />
       <item itemvalue="PHPUnit.EmailTest.testCannotBeCreatedFromInvalidEmailAddress" />
       <item itemvalue="PHPUnit.CheckIDTest.testResultQuery" />
       <item itemvalue="PHPUnit.CheckIDTest" />
-      <item itemvalue="PHP Script.KtraID.php" />
+      <item itemvalue="PHPUnit.KtraNguyenToTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.KtraNguyenToTest" />
         <item itemvalue="PHPUnit.CheckIDTest.testResultQuery" />
         <item itemvalue="PHPUnit.CheckIDTest" />
         <item itemvalue="PHP Script.KtraID.php" />
         <item itemvalue="PHPUnit.EmailTest.testCannotBeCreatedFromInvalidEmailAddress" />
-        <item itemvalue="PHPUnit.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +228,10 @@
       <workItem from="1604611386022" duration="772000" />
       <workItem from="1604849048293" duration="3868000" />
       <workItem from="1604870961408" duration="3334000" />
-      <workItem from="1604875008213" duration="2466000" />
+      <workItem from="1604875008213" duration="2843000" />
+      <workItem from="1604962960334" duration="697000" />
+      <workItem from="1604988137898" duration="4548000" />
+      <workItem from="1604994074739" duration="295000" />
     </task>
     <servers />
   </component>
@@ -340,29 +327,29 @@
       <screen x="0" y="27" width="1308" height="741" />
     </state>
     <state x="280" y="27" width="751" height="741" key="#huy-izweb/0.27.1308.741@0.27.1308.741" timestamp="1602144855802" />
-    <state x="559" y="231" width="393" height="344" key="FileChooserDialogImpl" timestamp="1604851873278">
+    <state x="559" y="231" width="393" height="344" key="FileChooserDialogImpl" timestamp="1604963053633">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state x="559" y="231" width="393" height="344" key="FileChooserDialogImpl/0.27.1308.741@0.27.1308.741" timestamp="1604851873278" />
+    <state x="559" y="231" width="393" height="344" key="FileChooserDialogImpl/0.27.1308.741@0.27.1308.741" timestamp="1604963053633" />
     <state x="701" y="298" width="424" height="491" key="FileChooserDialogImpl/331.1080.1366.768/0.0.1639.1080@0.0.1639.1080" timestamp="1600238549055" />
     <state x="701" y="298" width="501" height="491" key="FileChooserDialogImpl/362.1080.1366.768/0.0.1639.1080@0.0.1639.1080" timestamp="1599205030555" />
     <state x="714" y="298" width="424" height="491" key="FileChooserDialogImpl/362.1080.1366.768/0.0.1670.1080@0.0.1670.1080" timestamp="1599104131720" />
-    <state width="1262" height="257" key="GridCell.Tab.0.bottom" timestamp="1604871131912">
+    <state width="1262" height="257" key="GridCell.Tab.0.bottom" timestamp="1604988767072">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state width="1262" height="257" key="GridCell.Tab.0.bottom/0.27.1308.741@0.27.1308.741" timestamp="1604871131912" />
-    <state width="1262" height="257" key="GridCell.Tab.0.center" timestamp="1604871131912">
+    <state width="1262" height="257" key="GridCell.Tab.0.bottom/0.27.1308.741@0.27.1308.741" timestamp="1604988767072" />
+    <state width="1262" height="257" key="GridCell.Tab.0.center" timestamp="1604988767071">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state width="1262" height="257" key="GridCell.Tab.0.center/0.27.1308.741@0.27.1308.741" timestamp="1604871131912" />
-    <state width="1262" height="257" key="GridCell.Tab.0.left" timestamp="1604871131911">
+    <state width="1262" height="257" key="GridCell.Tab.0.center/0.27.1308.741@0.27.1308.741" timestamp="1604988767071" />
+    <state width="1262" height="257" key="GridCell.Tab.0.left" timestamp="1604988767070">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state width="1262" height="257" key="GridCell.Tab.0.left/0.27.1308.741@0.27.1308.741" timestamp="1604871131911" />
-    <state width="1262" height="257" key="GridCell.Tab.0.right" timestamp="1604871131912">
+    <state width="1262" height="257" key="GridCell.Tab.0.left/0.27.1308.741@0.27.1308.741" timestamp="1604988767070" />
+    <state width="1262" height="257" key="GridCell.Tab.0.right" timestamp="1604988767071">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state width="1262" height="257" key="GridCell.Tab.0.right/0.27.1308.741@0.27.1308.741" timestamp="1604871131912" />
+    <state width="1262" height="257" key="GridCell.Tab.0.right/0.27.1308.741@0.27.1308.741" timestamp="1604988767071" />
     <state x="456" y="117" width="386" height="568" key="NewPhpClassDialog" timestamp="1604877306005">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
@@ -374,10 +361,10 @@
     <state x="539" y="454" width="399" height="156" key="NewPhpFileDialog/331.1080.1366.768/0.0.1639.1080@0.0.1639.1080" timestamp="1599648221246" />
     <state x="549" y="454" width="399" height="156" key="NewPhpFileDialog/362.1080.1366.768/0.0.1670.1080@0.0.1670.1080" timestamp="1599124110725" />
     <state x="811" y="1403" width="399" height="156" key="NewPhpFileDialog/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598945970050" />
-    <state x="195" y="27" width="900" height="741" key="SettingsEditor" timestamp="1604851900385">
+    <state x="195" y="27" width="900" height="741" key="SettingsEditor" timestamp="1604994337036">
       <screen x="0" y="27" width="1308" height="741" />
     </state>
-    <state x="195" y="27" width="900" height="741" key="SettingsEditor/0.27.1308.741@0.27.1308.741" timestamp="1604851900385" />
+    <state x="195" y="27" width="900" height="741" key="SettingsEditor/0.27.1308.741@0.27.1308.741" timestamp="1604994337036" />
     <state x="467" y="152" width="910" height="888" key="SettingsEditor/331.1080.1366.768/0.0.1639.1080@0.0.1639.1080" timestamp="1599216226017" />
     <state x="296" y="116" width="1362" height="865" key="SettingsEditor/362.1080.1366.768/0.0.1670.1080@0.0.1670.1080" timestamp="1599194250017" />
     <state x="548" y="1107" width="900" height="741" key="SettingsEditor/362.1080.1366.768/0.0.1670.1080@362.1080.1366.768" timestamp="1598951189979" />
